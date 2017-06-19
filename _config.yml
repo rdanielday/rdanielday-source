@@ -4,7 +4,7 @@
 
 # Site
 title: rdanielday
-subtitle: thoughts on learning/javascript/design
+subtitle:
 description:
 author: Ryan D. Day
 language: en
@@ -84,4 +84,5 @@ theme: read
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: https://github.com/rdanielday/rdanielday.github.io.git

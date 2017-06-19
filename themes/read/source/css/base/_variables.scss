@@ -56,7 +56,7 @@ $gutterwidths: (
 // Add weight and style details too.
 // ! Set cap height to set to the baseline.
 $bodytype: (
-  font-family: 'Merriweather, serif',
+  font-family: 'Merriweather, Georgia, serif',
   regular: 400,
   bold: 700,
   italic: italic,
@@ -64,9 +64,11 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: 'Open Sans, serif',
+  font-family: 'Raleway, sans-serif',
   regular: 400,
+  semibold: 600,
   bold: 700,
+  bolder: 800,
   cap-height: 0.75
 ) !default;
 

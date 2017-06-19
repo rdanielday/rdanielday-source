@@ -81,7 +81,7 @@
 
     font-family: unquote(map-get($headingtype, font-family));
     font-style: normal;
-    font-weight: map-get($headingtype, regular);
+    font-weight: map-get($headingtype, semibold);
 
     a, span {
       -webkit-user-select: none;
