@@ -1,0 +1,60 @@
+
+<%
+var pageTitle = page.title || config.subtitle || '';
+if (is_archive()) pageTitle = 'Archives';
+if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+if (is_year()) pageTitle += ': ' + page.year;
+pageTitle += ' [ ' + config.title + ' ]';
+%>
+
+<!DOCTYPE html>
+<html lang="<%=config.language%>">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Montserrat+Subrayada" rel="stylesheet">
+  <title><%=pageTitle%></title>
+  <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
+    <!-- stylesheets list from config.yml -->
+    <% theme.stylesheets.forEach(function(url) { %>
+      <link rel="stylesheet" href="<%=url%>">
+    <% }); %>
+  <% } %>
+</head>
+<body>
+
+<header class="section global-header">
+  <div class="typeset global-header__splash">
+    <h1 class="global-header__title">rdanielday</h1>
+  </div>
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <% Object.keys(theme.menu).forEach(function(key) { %>
+        <li><h4><a href="<%=theme.menu[key]%>"><%=key%></a></h4></li>
+      <% }); %>
+    </ul>
+  </nav>
+</header>
+
+<section class="section typeset">
+  <div class="single-measure">
+    <%- body %>
+  </div>
+</section>
+
+<footer class="global-footer">
+  <p>made by <a href="http://github.com/rdanielday">rdanielday</a></p>
+</footer>
+
+
+
+<% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
+  <!-- scripts list from theme config.yml -->
+  <% theme.scripts.forEach(function(url) { %>
+    <script src="<%=url%>"></script>
+  <% }); %>
+<% } %>
+
+</body>
+</html>

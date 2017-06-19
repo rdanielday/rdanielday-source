@@ -1,0 +1,73 @@
+// Global demo styles.
+// ---------------------------------------
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $backgroundColour;
+  color: $bodyColour;
+  overflow: auto;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.section {
+  padding: 1rem 0 2rem 0;
+
+  @include breakpoint(break-1) {
+    padding: 2rem 0 4rem 0;
+  }
+
+  @include breakpoint(break-2) {
+    padding: 2rem 0 4rem 0;
+  }
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+
+  @include breakpoint(break-1) {
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.button-align {
+  @include baseline(zeta, $bodytype, 2, 2, all);
+}
+
+.post-item {
+  padding: .5rem 0;
+  @include clearfix;
+}
+
+.post-item__title {
+  @extend a;
+  color: $bodyColour;
+  &:hover, &:active, &:focus {
+    color: $hoverColour;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
+    background-position: 0 93%;
+    background-repeat: repeat-x;
+    background-size: 100% 0.15rem;
+    text-shadow: 0.1rem 0 $backgroundColour,
+                 0.15rem 0 $backgroundColour,
+                -0.1rem 0 $backgroundColour,
+                -0.15rem 0 $backgroundColour;
+  }
+}
+
+.post-item__link {
+  @extend .post-item__title;
+}
+
+.post-item__subtitle {
+  @extend small;
+  color: $captionColour;
+  float: right;
+}

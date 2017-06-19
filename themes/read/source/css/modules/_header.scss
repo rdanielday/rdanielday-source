@@ -1,0 +1,37 @@
+// Header demo styles.
+// ---------------------------------------
+
+.global-header {
+  @include clearfix;
+  background-color: $backgroundColour;
+  li {
+    list-style-type: none;
+  }
+
+  .global-header__splash {
+    color: $bodyColour;
+    display: inline-block;
+    padding: 1rem 0 0 0;
+    position: relative;
+    vertical-align: middle;
+
+    @include breakpoint(break-1) {
+      margin-left: 4rem;
+    }
+
+    a {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .global-header__title {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: $backgroundColour;
+    background: $bodyColour;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+}
