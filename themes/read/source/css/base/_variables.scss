@@ -29,10 +29,10 @@ $rootsizes: (
 // Note: this was 'maxwidths' in previous versions.
 $measures: (
   measure-0: 500,  // 500px wide
-  measure-1: 562.5,  // 550px wide
-  measure-2: 632.8,  // 600px wide
-  measure-3: 712.0,  // 650px wide
-  measure-4: 801   // 700px wide
+  measure-1: 550,  // 550px wide
+  measure-2: 600,  // 600px wide
+  measure-3: 650,  // 650px wide
+  measure-4: 700  // 700px wide
 ) !default;
 
 // Set the max-widths for containers (based on design).
@@ -64,9 +64,8 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: 'Raleway, sans-serif',
+  font-family: 'Raleway, Helvetica, Arial, sans-serif',
   regular: 400,
-  semibold: 600,
   bold: 700,
   bolder: 800,
   cap-height: 0.75

@@ -29,38 +29,38 @@ $modular-scale: (
   ),
   // Major Third http://www.modularscale.com/?18,32&px&1.25&web&text
   scale-2: (
-    alpha:   32.0,
-    beta:    28.1,
-    gamma:   25.6,
-    delta:   22.5,
-    epsilon: 20.5,
-    zeta:    18.0,
-    eta:     16.3,
-    theta:   14.4,
-    iota:    13.1
-  ),
-  // Perfect Fourth http://www.modularscale.com/?18,40&px&1.333&web&text
-  scale-3: (
-    alpha:   45.0,
-    beta:    40.0,
-    gamma:   31.8,
-    delta:   28.3,
-    epsilon: 22.5,
-    zeta:    20.0,
-    eta:     15.9,
-    theta:   14.1,
-    iota:    11.3
-  ),
-  // Aug. Fourth http://www.modularscale.com/?20,45&px&1.414
-  scale-4: (
     alpha:   50.0,
-    beta:    44.0,
-    gamma:   35.4,
-    delta:   31.1,
-    epsilon: 25.0,
+    beta:    40.5,
+    gamma:   33.3,
+    delta:   27,
+    epsilon: 22.22,
+    zeta:    18.0,
+    eta:     14.8,
+    theta:   12,
+    iota:    9.9
+  ),
+  // Golden Ratio http://www.modularscale.com/?20,60&px&1.618
+  scale-3: (
+    alpha:   84.2,
+    beta:    63.2,
+    gamma:   47.4,
+    delta:   35.5,
+    epsilon: 26.7,
+    zeta:    20.0,
+    eta:     15.0,
+    theta:   11.3,
+    iota:    8.4
+  ),
+  // Golden Ratio http://www.modularscale.com/?22,70&px&1.618
+  scale-4: (
+    alpha:   92.6,
+    beta:    69.5,
+    gamma:   52.1,
+    delta:   39.1,
+    epsilon: 29.3,
     zeta:    22.0,
-    eta:     17.7,
-    theta:   15.6,
-    iota:    12.5
+    eta:     16.5,
+    theta:   12.4,
+    iota:    9.3
   )
 );
