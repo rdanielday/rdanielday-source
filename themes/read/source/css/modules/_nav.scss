@@ -79,9 +79,9 @@
   li {
     @include fontsize(14, 0);
 
-    font-family: unquote(map-get($headingtype, font-family));
+    font-family: unquote(map-get($secondarytype, font-family));
     font-style: normal;
-    font-weight: map-get($headingtype, semibold);
+    font-weight: map-get($headingtype, regular);
 
     a, span {
       -webkit-user-select: none;

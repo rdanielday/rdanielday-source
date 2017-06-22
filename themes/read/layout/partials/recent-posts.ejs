@@ -2,12 +2,20 @@
   <div class="recent-posts">
     <% site.posts.sort('date', -1).limit(10).each(function(post) { %>
       <div class="post-item">
-        <a class="post-item__title" href="<%=config.root + post.path%>"><%=post.title%></a>
+        <h1 class="post-item__title gamma"><%=post.title%></h1>
         <% if (post.date) { %>
           <time class="post-item__subtitle" datetime="<%=post.date.toJSON()%>">
             <%=date(post.date)%>
           </time>
         <% } %>
+      </div>
+      <div class="post-item__excerpt">
+        <%=post.excerpt%>
+      </div>
+      <div>
+        <a class="post-item__link" href="<%- config.root %><%- post.path %>">
+          <%= theme.excerpt_link %>
+        </a>
       </div>
     <% }); %>
   </div>

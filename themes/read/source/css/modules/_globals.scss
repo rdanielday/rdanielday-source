@@ -42,13 +42,23 @@ img {
 }
 
 .post-item {
-  padding: .5rem 0;
-  @include clearfix;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
 }
 
 .post-item__title {
+  display: inline-block;
+  float: left;
+  vertical-align: baseline;
+}
+
+.post-item__link {
   @extend a;
   color: $bodyColour;
+  text-decoration: none;
+  background-size: 0;
   &:hover, &:active, &:focus {
     color: $hoverColour;
     background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
@@ -62,12 +72,11 @@ img {
   }
 }
 
-.post-item__link {
-  @extend .post-item__title;
+.post-item__subtitle {
+  @include fontsize(eta, all);
+  color: $captionColour;
 }
 
-.post-item__subtitle {
-  @extend small;
-  color: $captionColour;
-  float: right;
+.post-item__excerpt {
+  padding: 1rem 0 1.5rem 0;
 }
