@@ -7,6 +7,17 @@
 
   margin: 0 auto;
   width: 94%;
+  @include breakpoint(break-0) {
+    @include maxwidth(0);
+  }
+  
+  @include breakpoint(break-1) {
+    @include maxwidth(1);
+  }
+  
+  @include breakpoint(break-2) {
+    @include maxwidth(2);
+  }
 
   @include breakpoint(break-3) {
     @include maxwidth(3);

@@ -10,7 +10,7 @@
         <% } %>
       </div>
       <div class="post-item__excerpt">
-        <%=post.excerpt%>
+        <%- strip_html(post.excerpt) %>
       </div>
       <div>
         <a class="post-item__link" href="<%- config.root %><%- post.path %>">

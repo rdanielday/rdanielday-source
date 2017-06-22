@@ -57,8 +57,15 @@ img {
 .post-item__link {
   @extend a;
   color: $bodyColour;
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($bodyColour,20%) 50%);
+  background-position: 0 93%;
+  background-repeat: repeat-x;
+  background-size: 100% 0.15rem;
+  text-shadow: 0.1rem 0 $backgroundColour,
+               0.15rem 0 $backgroundColour,
+              -0.1rem 0 $backgroundColour,
+              -0.15rem 0 $backgroundColour;
   text-decoration: none;
-  background-size: 0;
   &:hover, &:active, &:focus {
     color: $hoverColour;
     background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
@@ -78,5 +85,5 @@ img {
 }
 
 .post-item__excerpt {
-  padding: 1rem 0 1.5rem 0;
+  padding: .5rem 0 .75rem 0;
 }
