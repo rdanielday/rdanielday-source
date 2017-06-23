@@ -64,37 +64,37 @@ a {
     font-family: unquote(map-get($headingtype, font-family));
     font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
     font-style: normal;
-    font-weight: map-get($headingtype, bold);
+    font-weight: map-get($headingtype, regular);
   }
 
   // Heading level 1.
   h1, .alpha {
-    @include sassline($fontsize: alpha, $font: $headingtype, $lineheight: 3, $below: 1.5, $breakpoint: all);
+    @include sassline($fontsize: alpha, $font: $headingtype, $lineheight: 3, $below: 3, $above: 4, $breakpoint: all);
   }
 
   // Heading level 2.
   h2, .beta {
-    @include sassline(beta, $headingtype, 3, 1, all);
+    @include sassline(beta, $headingtype, 3, 2, 2, all);
   }
 
   // Heading level 3.
   h3, .gamma {
-    @include sassline(gamma, $headingtype, 3, .5, all);
+    @include sassline(gamma, $headingtype, 3, 1.5, 2, all);
   }
 
   // Heading level 4.
   h4, .delta {
-    @include sassline(delta, $headingtype, 2, 0, all);
+    @include sassline(delta, $headingtype, 2, 0, 0, all);
   }
 
   // Heading level 5.
   h5, .epsilon {
-    @include sassline(epsilon, $headingtype, 2, 0, all);
+    @include sassline(epsilon, $headingtype, 2, 0, 0, all);
   }
 
   // Heading level 6.
   h6, .zeta {
-    @include sassline(zeta, $headingtype, 2, 0, all);
+    @include sassline(zeta, $headingtype, 2, 0, 0, all);
   }
 
   // Lists.
