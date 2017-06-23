@@ -77,11 +77,11 @@
   }
 
   li {
-    @include fontsize(14, 0);
+    @include fontsize(16, 0);
 
     font-family: unquote(map-get($secondarytype, font-family));
     font-style: normal;
-    font-weight: map-get($headingtype, regular);
+    font-weight: map-get($secondarytype, regular);
 
     a, span {
       -webkit-user-select: none;
@@ -104,13 +104,12 @@
     }
 
     @include breakpoint(break-1) {
-      @include fontsize(14, 1);
+      @include fontsize(16, 1);
 
       display: inline-block;
       letter-spacing: 0.1rem;
       margin-right: 2rem;
       padding: 1rem 0;
-      text-transform: uppercase;
       width: auto;
 
       a, span {
@@ -128,15 +127,15 @@
     }
 
     @include breakpoint(break-2) {
-      @include fontsize(14, 2);
+      @include fontsize(16, 2);
     }
 
     @include breakpoint(break-3) {
-      @include fontsize(14, 3);
+      @include fontsize(16, 3);
     }
 
     @include breakpoint(break-4) {
-      @include fontsize(14, 4);
+      @include fontsize(16, 4);
     }
   }
 }

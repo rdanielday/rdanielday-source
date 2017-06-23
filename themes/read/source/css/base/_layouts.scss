@@ -6,15 +6,15 @@
   @include clearfix;
 
   margin: 0 auto;
-  width: 94%;
+  width: 100%;
   @include breakpoint(break-0) {
     @include maxwidth(0);
   }
-  
+
   @include breakpoint(break-1) {
     @include maxwidth(1);
   }
-  
+
   @include breakpoint(break-2) {
     @include maxwidth(2);
   }

@@ -13,7 +13,7 @@ pageTitle += ' [ ' + config.title + ' ]';
 <html lang="<%=config.language%>">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans|Montserrat+Subrayada" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,600,700|Alegreya+Sans+SC:500|Montserrat+Subrayada" rel="stylesheet">
   <title><%=pageTitle%></title>
   <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
     <!-- stylesheets list from config.yml -->
@@ -37,7 +37,7 @@ pageTitle += ' [ ' + config.title + ' ]';
   </nav>
 </header>
 
-<section class="section typeset">
+<section class="typeset">
   <div class="single-measure">
     <%- body %>
   </div>
