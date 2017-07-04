@@ -28,11 +28,11 @@ $rootsizes: (
 // ! Make sure to have as many widths as breakpoints above.
 // Note: this was 'maxwidths' in previous versions.
 $measures: (
-  measure-0: 500,  // 500px wide
-  measure-1: 600,  // 550px wide
-  measure-2: 650,  // 600px wide
-  measure-3: 700,  // 650px wide
-  measure-4: 700  // 700px wide
+  measure-0: 466.2,  // 500px wide
+  measure-1: 566.9,  // 550px wide
+  measure-2: 599.4,  // 600px wide
+  measure-3: 666,  // 650px wide
+  measure-4: 700 // 700px wide
 ) !default;
 
 // Set the max-widths for containers (based on design).
@@ -99,5 +99,5 @@ $captionColour: #767676 !default;
 $white: #FFFFFF !default;
 
 // Background colours.
-$backgroundColour: #e9ecef !default;
+$backgroundColour: #f8f9fa !default;
 $codeBackgroundColour: #AAAAAA !default;

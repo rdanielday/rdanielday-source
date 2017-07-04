@@ -5,7 +5,7 @@
 $modular-scale: (
   // Major Third http://www.modularscale.com/?16,28&px&1.25&web&text
   scale-0: (
-    alpha:   28.0,
+    alpha:   38.0,
     beta:    25.0,
     gamma:   22.4,
     delta:   20.0,
@@ -17,7 +17,7 @@ $modular-scale: (
   ),
   // Major Third http://www.modularscale.com/?17,30&px&1.25&web&text
   scale-1: (
-    alpha:   30.0,
+    alpha:   44,
     beta:    26.6,
     gamma:   24.0,
     delta:   21.3,
@@ -30,35 +30,35 @@ $modular-scale: (
   // Major Third http://www.modularscale.com/?18,32&px&1.25&web&text
   scale-2: (
     alpha:   50.0,
-    beta:    40.5,
-    gamma:   33.3,
-    delta:   27,
-    epsilon: 22.22,
-    zeta:    18.0,
-    eta:     14.8,
-    theta:   12,
-    iota:    9.9
+    beta:    41.7,
+    gamma:   28.9,
+    delta:   24.5,
+    epsilon: 20.4,
+    zeta:    17.0,
+    eta:     14.2,
+    theta:   13.95,
+    iota:    11.8
   ),
   // Golden Ratio http://www.modularscale.com/?20,60&px&1.618
   scale-3: (
-    alpha:   50,
+    alpha:   60,
     beta:    41.7,
-    gamma:   32.8,
-    delta:   27.4,
+    gamma:   28.9,
+    delta:   25.9,
     epsilon: 22.8,
-    zeta:    19.0,
+    zeta:    18.0,
     eta:     17.5,
     theta:   14.6,
     iota:    12.2
   ),
   // Major Third Ratio http://www.modularscale.com/?21&px&1.25
   scale-4: (
-    alpha:   55,
+    alpha:   64.5,
     beta:    45.8,
-    gamma:   32.8,
-    delta:   27.7,
-    epsilon: 22.8,
-    zeta:    19.0,
+    gamma:   31.8,
+    delta:   26.5,
+    epsilon: 22.1,
+    zeta:    18.0,
     eta:     17.5,
     theta:   14.6,
     iota:    12.2
