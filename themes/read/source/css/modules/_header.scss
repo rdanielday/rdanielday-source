@@ -11,12 +11,10 @@
   .global-header__splash {
     color: $bodyColour;
     display: inline-block;
-    padding: 1rem 0 0 0;
     position: relative;
     vertical-align: middle;
 
     @include breakpoint(break-1) {
-      margin-left: 2rem;
     }
 
     a {
@@ -28,11 +26,7 @@
     }
   }
   .global-header__title {
-    font-family: 'Montserrat Subrayada', sans-serif;
-    letter-spacing: 0;
-    color: $backgroundColour;
-    background: $bodyColour;
     margin-bottom: 0;
-    padding: 1.618rem;
+    padding-top: 1rem;
   }
 }

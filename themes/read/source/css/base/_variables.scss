@@ -91,13 +91,13 @@ $monospacetype: (
 // Proxima Nova: 0.57, Museo Slab: 0.66, JAF Facit: 0.7, Brandon Grotesque: 0.65, Clavo: 0.7, Adelle: 0.66, FF Tisa Pro: 0.82, Jubilat: 0.66, Futura PT: 0.66, Chaparral Pro: 0.5, Minion Pro: 0.66, Myriad Pro: 0.66, Adobe Caslon Pro: 0.36
 
 // Text colours. British English.
-$headingColour: #000 !default;
-$bodyColour: #000 !default;
+$headingColour: #212529 !default;
+$bodyColour: #343a40 !default;
 $linkColour: #0E58F5 !default;
 $hoverColour: #0B348B !default;
 $captionColour: #767676 !default;
 $white: #FFFFFF !default;
 
 // Background colours.
-$backgroundColour: #f8f9fa !default;
+$backgroundColour: $white !default;
 $codeBackgroundColour: #AAAAAA !default;

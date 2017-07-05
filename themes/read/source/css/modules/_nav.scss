@@ -2,6 +2,7 @@
 // ---------------------------------------
 
 // responsive-nav.js styles.
+
 .nav-collapse {
 
   ul {
@@ -60,8 +61,7 @@
     display: inline-block;
     vertical-align: middle;
     float: right;
-    padding: 2rem 0;
-    margin-right: 2rem;
+    padding-top: 2rem;
   }
 
   .main-nav__list {
@@ -88,18 +88,26 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($linkColour,20%) 50%);
+      background-position: 0 93%;
+      background-repeat: repeat-x;
+      background-size: 100% 0.15rem;
+      text-shadow: 0.1rem 0 $backgroundColour,
+                   0.15rem 0 $backgroundColour,
+                  -0.1rem 0 $backgroundColour,
+                  -0.15rem 0 $backgroundColour;
 
       border-bottom: 0.1rem solid darken($white, 15%);
-      color: $bodyColour;
       cursor: pointer;
       display: block;
       letter-spacing: 0.1rem;
       text-transform: uppercase;
       padding: 6px 3%;
-      text-decoration: underline;
+      text-decoration: none;
 
       &:hover, &:active, &:focus {
         color: $hoverColour;
+        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
       }
     }
 
@@ -108,20 +116,19 @@
 
       display: inline-block;
       letter-spacing: 0.1rem;
-      margin-right: 2rem;
-      padding: 1rem 0;
+      padding: 0rem 0;
+      margin-left: 2rem;
       width: auto;
 
       a, span {
         border: 0;
-        color: $bodyColour;
         display: inline;
         padding: 0;
-        text-decoration: underline;
+        text-decoration: none;
 
         &:hover, &:active, &:focus {
           background-color: transparent;
-          color: $linkColour;
+          color: $hoverColour;
         }
       }
     }

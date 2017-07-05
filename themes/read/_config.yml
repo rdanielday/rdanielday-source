@@ -6,8 +6,8 @@ language: en
 menu:
   Home: /
   About: /about
+  Words: /archive
   Contact: /contact
-  Github: https://github.com/rdanielday
 
 # Miscelaneous
 favicon: /favicon.ico
