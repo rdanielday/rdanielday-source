@@ -8,6 +8,7 @@
   margin: 0 auto;
   position: relative;
   width: 94%;
+  padding: 0 2rem;
 
   @include breakpoint(break-3) {
     @include maxwidth(3);
@@ -20,9 +21,14 @@
 
 // Single column (based on measure for typeset content).
 .single-measure {
-  @include measure(all);
-
   margin: 0 auto;
+  @include measure(0);
+  padding-left: map-get($gutterwidths, medium);
+  padding-right: map-get($gutterwidths, medium);
+  @include measure(1);
+  @include measure(2);
+  @include measure(3);
+  @include measure(4);
 }
 
 // Base column styles.
