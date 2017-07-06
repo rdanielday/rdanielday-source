@@ -15,3 +15,19 @@
   @include fontsize(eta, all);
   color: $captionColour;
 }
+
+.post-item__link {
+  @include fontsize(eta, all);
+
+  font-family: unquote(map-get($secondarytype, font-family));
+  font-style: normal;
+  font-weight: map-get($secondarytype, regular);
+  color: $linkColour;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    color: $hoverColour;
+  }
+}
