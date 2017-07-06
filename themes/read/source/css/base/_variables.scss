@@ -17,10 +17,10 @@ $breakpoints: (
 // ! Make sure to have as many sizes as breakpoints above.
 $rootsizes: (
   rootsize-0: 12,   // 24px line-height body text
-  rootsize-1: 12.75,   // 28px line-height body text
-  rootsize-2: 13.5,   // 30px line-height body text
-  rootsize-3: 14.25,   // 34px line-height body text
-  rootsize-4: 14.25
+  rootsize-1: 14,   // 28px line-height body text
+  rootsize-2: 15,   // 30px line-height body text
+  rootsize-3: 17,   // 34px line-height body text
+  rootsize-4: 17    // 38px line-height body text
 ) !default;
 
 // Set the optimum line-length for your text (based on typeface).
@@ -28,11 +28,11 @@ $rootsizes: (
 // ! Make sure to have as many widths as breakpoints above.
 // Note: this was 'maxwidths' in previous versions.
 $measures: (
-  measure-0: 466.2,  // 500px wide
-  measure-1: 566.9,  // 550px wide
-  measure-2: 599.4,  // 600px wide
-  measure-3: 666,  // 650px wide
-  measure-4: 700 // 700px wide
+  measure-0: 500,  // 500px wide
+  measure-1: 550,  // 550px wide
+  measure-2: 600,  // 600px wide
+  measure-3: 650,  // 680px wide
+  measure-4: 650   // 750px wide
 ) !default;
 
 // Set the max-widths for containers (based on design).
@@ -41,8 +41,8 @@ $maxwidths: (
   width-0: 500,  // 500px wide
   width-1: 600,  // 600px wide
   width-2: 800,  // 800px wide
-  width-3: 950, // 110px wide
-  width-4: 1100  // 1300px wide
+  width-3: 1100, // 110px wide
+  width-4: 1300  // 1300px wide
 ) !default;
 
 // Gutter widths

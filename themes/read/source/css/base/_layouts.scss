@@ -6,17 +6,8 @@
   @include clearfix;
 
   margin: 0 auto;
-  @include breakpoint(break-0) {
-    @include maxwidth(0);
-  }
-
-  @include breakpoint(break-1) {
-    @include maxwidth(1);
-  }
-
-  @include breakpoint(break-2) {
-    @include maxwidth(2);
-  }
+  position: relative;
+  width: 94%;
 
   @include breakpoint(break-3) {
     @include maxwidth(3);
@@ -30,9 +21,8 @@
 // Single column (based on measure for typeset content).
 .single-measure {
   @include measure(all);
-  @include clearfix;
+
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 // Base column styles.

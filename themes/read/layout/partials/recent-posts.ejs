@@ -10,12 +10,12 @@
         <% } %>
       </div>
       <div class="post-item__excerpt">
-        <%- strip_html(post.excerpt) %>
+        <p><%- strip_html(post.excerpt) %></p>
       </div>
       <div>
-        <a class="post-item__link" href="<%- config.root %><%- post.path %>">
+        <p><a href="<%- config.root %><%- post.path %>">
           <%= theme.excerpt_link %>
-        </a>
+        </a></p>
       </div>
     <% }); %>
   </div>

@@ -1,12 +1,13 @@
 <header class="section global-header">
   <div class="typeset global-header__splash">
-    <h1 class="global-header__title beta">rdanielday</h1>
+    <h1 class="global-header__title alpha">rdanielday</h1>
   </div>
   <nav class="main-nav">
     <ul class="main-nav__list">
       <% Object.keys(theme.menu).forEach(function(key) { %>
         <li><h4><a href="<%=theme.menu[key]%>"><%=key%></a></h4></li>
       <% }); %>
+        <li><span id="gridtoggle">show grid</span></li>
     </ul>
   </nav>
 </header>
