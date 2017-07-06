@@ -13,10 +13,11 @@
     display: inline-block;
     position: relative;
     vertical-align: middle;
-
+    margin: 2rem 0 2rem 3%;
     @include breakpoint(break-1) {
+      margin-left: 2rem;
     }
-
+    
     a {
       bottom: 0;
       left: 0;
