@@ -5,8 +5,7 @@ language: en
 # main menu navigation
 menu:
   Home: /
-  About: /about
-  Words: /archive
+  Writing: /blog
   Contact: /contact
 
 # Miscelaneous

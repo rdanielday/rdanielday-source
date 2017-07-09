@@ -1,7 +1,14 @@
 <%-partial('partials/head')%>
-
 <%-partial('partials/nav')%>
 
-<%-partial('partials/content')%>
+<% if (is_home()) { %>
+
+    <%-partial('partials/home')%>
+    
+<% }  else { %>
+
+    <%-partial('partials/content')%>
+    
+<% } %>
 
 <%-partial('partials/footer')%>

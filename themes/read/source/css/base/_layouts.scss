@@ -240,19 +240,19 @@
 .column--left {
 
   @include breakpoint(break-1) {
-    @include ideal-measure(1, small);
+    @include measure(1);
   }
 
   @include breakpoint(break-2) {
-    @include ideal-measure(2, small);
+    @include measure(2);
   }
 
   @include breakpoint(break-3) {
-    @include ideal-measure(3, medium);
+    @include measure(3);
   }
 
   @include breakpoint(break-4) {
-    @include ideal-measure(4, medium);
+    @include measure(4);
   }
 
   .sidenote {
